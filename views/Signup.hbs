@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/Signup.css">
+</head>
+<body>
+            
+    <div class="login-container">
+        
+        <form action="/auth/signup" method="post">
+            <h1>Register</h1>
+            
+            {{#if msg}}
+            <p>{{msg}}</p>
+            {{/if}}
+            
+            <input type="text" placeholder="Username" name="username" required><span class="fa-regular fa-user"></span>
+            <input type="email" placeholder="Email" name="email" required><span class="emailicon"><i class="fa-regular fa-envelope"></i></span>
+            <input type="password" placeholder="Password" class="password" name="password" required><span id="info"class="fa-regular fa-eye-slash"></span>
+            <input type="password" placeholder="Confirm Password" class="confirmpassword" name="conmpaswword" required><span id="confirmpassword"class="fa-regular fa-eye-slash"></span>
+        
+        
+        <button class="login">Log in</button>
+        <button class="signup" type="submit">Sign Up</button>
+
+        </form>
+        
+    </div>
+    <script src="/js/Signup.js"></script>
+</body>
+</html>

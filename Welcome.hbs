@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Sharing using cloud</title>
+    <meta name="application-url" content="https://mail.google.com/mail/">
+    <link rel="stylesheet" href="/css/welcome.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li class="home"><a href="">Home</a></li>
+                <li class="topRelease"><a href="">Top Releases</a></li>
+                <li class="live"><a href="">Live</a></li>
+                <li class="mviewed"><a href="">Most Viewed</a></li>
+                <li class="explore"><a href="">Explore More</a></li>
+                <li class="fav"><a href="">Favourite</a></li>
+                <li class="upload"><a href="/uploads">Upload</a></li>
+                <li class="settings"><a href="">Settings</a></li>
+            </ul>
+        </nav>
+        <div>
+<div class="searcharea">
+            <input type="text"  placeholder="Enter a movie name">
+            <button >Search</button>
+        </div>
+            
+
+        <div class="video-cards-container">
+        <div class="video-card">
+            <video controls>
+                <source src="{{https://s3.us.cloud-object-storage.appdomain.cloud/datastoring/Naruto All Thousand Years Of Death Moment(720P_HD).mp4}}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-info">
+                <h2>{{Naruto All Thousand Years Of Death Moment(720P_HD).mp4}}</h2>
+                <a href="{{https://s3.us.cloud-object-storage.appdomain.cloud/datastoring/Naruto All Thousand Years Of Death Moment(720P_HD).mp4}}" download="{{Naruto All Thousand Years Of Death Moment(720P_HD).mp4}}">
+                    <button>Download</button>
+                </a>
+            </div>
+        </div>
+        <div class="video-card">
+            <video controls>
+                <source src="{{ https://s3.us.cloud-object-storage.appdomain.cloud/datastoring/boys.mov}}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-info">
+                <h2>{{boys.mov}}</h2>
+                <a href="{{ https://s3.us.cloud-object-storage.appdomain.cloud/datastoring/boys.mov}}" download="{{boys.mov}}">
+                    <button>Download</button>
+                </a>
+            </div>
+        </div>
+        <div class="video-card">
+            <video controls>
+                <source src="{{https://s3.us.cloud-object-storage.appdomain.cloud/datastoring/boys.mov}}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-info">
+                <h2>{{mash 2.mov}}</h2>
+                <a href="{{https://s3.us.cloud-object-storage.appdomain.cloud/datastoring/boys.mov}}" download="{{mash 2.mov}}">
+                    <button>Download</button>
+                </a>
+            </div>
+        </div>
+    </div>
+        </div>
+        
+</main>
+    
+    <script src="/public/js/welcome.js"></script>
+</body>
+</html>

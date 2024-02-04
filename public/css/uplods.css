@@ -1,0 +1,30 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 50px;
+}
+h1{
+    margin-left: 45%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    font-weight: bold;
+    width:500px;
+    height: 40px;
+}
+button{
+    width: fit-content;
+    padding: 20px 30px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+p{
+    color: black;
+    font-weight: bold;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Video Upload</title>
+    <link rel="stylesheet" href="/css/uplods.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Select a File</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <input type="text" name="name" accept="video/*" placeholder="Enter the name of the file" required><br>
+      <input type="file" name="video"><br>
+      <button type="submit">Upload</button>
+    </form>
+    {{#if msg}}
+    <p>{{msg}}</p>
+    {{/if}}
+  </body>
+</html>

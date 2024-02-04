@@ -1,0 +1,63 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+input {
+    position: relative;
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button ,input[type="button"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+input[type="button"]{
+    width: auto;
+}
+.signup{
+    margin-left: 50px;
+}
+
+button:hover {
+    background-color: #2575b4;
+}
+
+.forgot-password a{
+    text-decoration: none;
+    margin-top: 10px;
+}
+span{
+    position: relative;
+    cursor: pointer;
+    top: -35px;
+    right: 25px;
+    float: right;
+}
